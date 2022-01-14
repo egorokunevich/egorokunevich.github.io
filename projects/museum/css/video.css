@@ -1,0 +1,16 @@
+.video-grid {
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: auto;
+}
+
+.video-grid__title {
+ grid-column-start: 1;
+ grid-column-end: 4;
+}
+
+.video-grid__description {
+ grid-column-start: 4;
+ grid-column-end: 7;
+}
+
