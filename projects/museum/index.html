@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/explore.css">
   <link rel="stylesheet" href="css/video.css">
+  <link rel="stylesheet" href="css/gallery.css">
 
   <!-- linking fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,6 +61,7 @@
             <a class="button"
               href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736">Discover
               the Louvre</a>
+            <!-- <iframe class="button" src="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736" frameborder="0">Discover the Louvre</iframe> -->
           </div>
           <div class="slider">
             <div class="slider__mask">
@@ -171,11 +173,11 @@
         <div class="section_padding">
           <div class="container flex">
             <div class="explore-container">
-              <div class="explore__text">
+              <div class="explore__description">
                 <div class="underline-title">
                   <h2 class="section__title">Picture explore</h2>
                 </div>
-                <div class="explore__text_padding-vert">
+                <div class="explore__description_padding-vert">
                   <p>Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.
                   </p>
                   <p>It was cleaned in 1984 to remove a <span class="text_gold">"yellow veil"</span> of dust that had
@@ -186,6 +188,9 @@
               </div>
               <div class="explore-slider__container">
                 <div class="explore-slider">
+                  <div class="explore-slider__after">
+                    <img src="assets/img/explore-slider/after.jpg" alt="after.jpg">
+                  </div>
                   <div class="explore-slider__control">
 
                   </div>
@@ -201,18 +206,88 @@
         <div class="section_padding">
           <div class="container">
             <div class="video-container flex">
-              <div class="video-grid grid">
+              <div class="video-grid">
                 <h2 class="section__title text_gold video-grid__title">Video journey</h2>
-                <p class="text_black video-grid__description">Enter and visit one of the most famous museums in the world and
-                  enjoy masterpieces
-                  such as Mona Lisa or Hammurabi's Code</p>
+                <p class="text_black video-grid__description">Enter and visit one of the most famous museums in the
+                  world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
+                <div class="video-player video-grid__player">
+                  <div class="video-player__poster">
+                    <div class="play-icon cursor-pointer"></div>
+                  </div>
+                  <div class="video-player__controls">
+                    <div class="player-controls__play cursor-pointer">
+                      <div class="player-controls__btn-opacity"></div>
+                    </div>
+                    <input type="range" value="35" min="0" max="100" class="player-controls__progress cursor-pointer">
+                    <div class="player-controls__mute cursor-pointer">
+                      <div class="player-controls__btn-opacity"></div>
+                    </div>
+                    <input type="range" value="75" min="0" max="100" class="player-controls__volume cursor-pointer">
+                    <div class="player-controls__fullscreen cursor-pointer">
+                      <div class="player-controls__btn-opacity"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="video-grid__playlist">
+                  <div class="playlist__videos">
+                    <iframe width="452" height="254" src="https://www.youtube.com/embed/zp1BXPX8jcU"
+                      title="YouTube video player" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+                    <iframe width="452" height="254" src="https://www.youtube.com/embed/Vi5D6FKhRmo"
+                      title="YouTube video player" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+                    <iframe width="452" height="254" src="https://www.youtube.com/embed/NOhDysLnTvY"
+                      title="YouTube video player" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+                  </div>
+                  <div class="playlist__controls">
+                    <div class="playlist-controls__left playlist-controls__btn"></div>
+                    <div class="playlist-controls__dot playlist-controls__btn playlist-controls__btn_active"></div>
+                    <div class="playlist-controls__dot playlist-controls__btn"></div>
+                    <div class="playlist-controls__dot playlist-controls__btn"></div>
+                    <div class="playlist-controls__dot playlist-controls__btn"></div>
+                    <div class="playlist-controls__dot playlist-controls__btn"></div>
+                    <div class="playlist-controls__right playlist-controls__btn"></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="gallery"></section>
+    <section id="gallery">
+      <div class="bg-wrapper_dark">
+        <div class="section_padding">
+          <div class="container">
+            <h2 class="section__title title-padding">Art gallery</h2>
+            <div class="picture-container">
+              <div class="picture-inner-container flex">
+                <img src="assets/img/galery/galery2.jpg" class="gallery-picture img-block" alt="galery2.jpg">
+                <img src="assets/img/galery/galery9.jpg" class="gallery-picture img-block" alt="galery9.jpg">
+                <img src="assets/img/galery/galery4.jpg" class="gallery-picture img-block" alt="galery4.jpg">
+                <img src="assets/img/galery/galery6.jpg" class="gallery-picture img-block" alt="galery6.jpg">
+                <img src="assets/img/galery/galery11.jpg" class="gallery-picture img-block" alt="galery11.jpg">
+                <img src="assets/img/galery/galery1.jpg" class="gallery-picture img-block" alt="galery1.jpg">
+                <img src="assets/img/galery/galery8.jpg" class="gallery-picture img-block" alt="galery8.jpg">
+                <img src="assets/img/galery/galery13.jpg" class="gallery-picture img-block" alt="galery13.jpg">
+                <img src="assets/img/galery/galery5.jpg" class="gallery-picture img-block" alt="galery5.jpg">
+                <img src="assets/img/galery/galery3.jpg" class="gallery-picture img-block"0 alt="galery3.jpg">
+                <img src="assets/img/galery/galery7.jpg" class="gallery-picture img-block"1 alt="galery7.jpg">
+                <img src="assets/img/galery/galery14.jpg" class="gallery-picture img-block"2 alt="galery14.jpg">
+                <img src="assets/img/galery/galery15.jpg" class="gallery-picture img-block"3 alt="galery15.jpg">
+                <img src="assets/img/galery/galery12.jpg" class="gallery-picture img-block"4 alt="galery12.jpg">
+                <img src="assets/img/galery/galery10.jpg" class="gallery-picture img-block"5 alt="galery10.jpg">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="tickets"></section>
     <section id="contacts"></section>
   </main>

@@ -20,6 +20,13 @@
   z-index: 3;
 }
 
+.explore-slider__after {
+  display: block;
+  width: 100;
+  height: 100%;
+
+}
+
 .explore-slider__control {
   position: absolute;
   left: calc(50% - 17px);
@@ -60,10 +67,12 @@
   background-color: #ffffff;
 } 
 
-.explore__text {
+.explore__description {
   max-width: 660px;
 }
 
-.explore__text_padding-vert {
+.explore__description_padding-vert {
   padding: 50px 0 50px 0;
 }
+
+
