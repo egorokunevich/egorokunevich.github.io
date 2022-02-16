@@ -78,4 +78,18 @@
     .burger-menu {
         display: block;
     }
+
+    .nav__list {
+        display: flex;
+        flex-flow: column nowrap;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: black;
+        z-index: 5;
+    }
+
+    .welcome__content {
+        transition: 1s;
+    }
 }

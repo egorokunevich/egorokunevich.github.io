@@ -180,6 +180,8 @@
 
   .dark-left {
     align-items: center;
+    transition: display 1s;
+    transition: transform 1s;
   }
 
   .welcome__btn {
