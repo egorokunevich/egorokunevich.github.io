@@ -1,5 +1,5 @@
-var burger = document.getElementById('burger-menu');
-var nav = document.getElementById('header-nav');
+var burger = document.getElementById("burger-menu");
+var nav = document.getElementById("header-nav");
 burger.onclick = function() {
     if(nav.style.display == "flex") {
         nav.style.display = 'none';
@@ -11,5 +11,5 @@ burger.onclick = function() {
      } else {
         welcome__content.style.display = 'none';
      };
-    
+
 };
