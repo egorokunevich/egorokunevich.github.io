@@ -475,6 +475,7 @@ input[type="range"]::-moz-range-progress {
   .video__title {
     padding-bottom: 0;
     max-height: 50px;
+    max-width: 100%;
   }
 
   .video-player {

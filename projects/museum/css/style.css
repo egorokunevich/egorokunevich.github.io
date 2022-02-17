@@ -292,3 +292,18 @@ input[type="radio"]:checked + .form__label:after {
     background-attachment: fixed;
   }
 }
+
+@media (max-width: 420px) {
+  .container {
+    max-width: 380px;
+  }
+
+  * {
+    font-size: 16px;
+  }
+
+  .section__title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
