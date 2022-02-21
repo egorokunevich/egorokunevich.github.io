@@ -38,6 +38,7 @@ burger.onclick = function () {
     } else {
       nav.classList.add("nav_active");
     }
+    
     if (welcomeContent.classList.contains("welcome-content_active")) {
       welcomeContent.classList.remove("welcome-content_active");
     } else {
