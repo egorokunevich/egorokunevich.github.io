@@ -84,7 +84,7 @@
   .header__nav {
     position: absolute;
     box-sizing: border-box;
-    max-width: 300px;
+    max-width: 320px;
     max-height: 585px;
     min-height: 400px;
     left: -100%;
@@ -93,6 +93,12 @@
     height: 100%;
     z-index: 50;
     transition: left 0.5s ease-in-out;
+  }
+
+  .nav-link {
+    display: block;
+    width: 50%;
+    z-index: 51;
   }
 
   .burger-menu {
@@ -107,7 +113,7 @@
     left: 0;
     background-color: black;
     z-index: 5;
-    width: 100%;
+    width: calc(100% - 55px);
     height: 100%;
     padding: 35px 0 0 55px;
   }
@@ -115,6 +121,19 @@
   .header__li {
       padding: 0;
       margin-bottom: 20px;
+  }
+
+  .header__li::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-image: url(../assets/svg/nav-arrow.svg);
+    background-repeat: no-repeat;
+    left: 165px;
+    transform: translateY(-15px);
+    z-index: 4;
   }
 
   .welcome__content {

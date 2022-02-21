@@ -167,6 +167,11 @@
     padding: 15px;
     font-size: 20px;
   }
+
+  /* скрытие контента для 1024px*/
+.welcome-content_active {
+  opacity: 0%;
+}
 }
 
 @media (max-width: 768px) {
@@ -214,6 +219,10 @@
     justify-content: center;
     column-gap: 20px;
   }
+
+.welcome-content_active {
+  opacity: 100%;
+}
 }
 
 @media (max-width: 420px) {
@@ -256,7 +265,3 @@
 }
 
 
-/* скрытие контента для 1024px*/
-.welcome-content_active {
-  opacity: 0%;
-}
