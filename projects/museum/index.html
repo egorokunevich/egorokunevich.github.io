@@ -26,6 +26,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
 
   <title>Louvre Museum</title>
+  <script src="js/tickets-refresh.js" type="text/javascript" defer></script>
 </head>
 
 <body>
@@ -335,20 +336,20 @@
                   <div class="amount__container">
                     <p class="ticket-amount__ticket-name">Basic 18+</p>
                     <div class="amount__inputs">
-                      <div id="trig" class="amount__btn" onclick="this.nextElementSibling.stepDown()">-</div>
-                      <input id="basicAmount" class="amount__number" type="number" min="0" max="20" value="0" readonly>
-                      <div class="amount__btn" onclick="this.previousElementSibling.stepUp()">+</div>
+                      <div id="ticketsBasicRemove" class="amount__btn">-</div>
+                      <input id="ticketsBasicAmount" class="amount__number" type="number" min="0" max="20" value="0" readonly>
+                      <div id="ticketsBasicAdd" class="amount__btn">+</div>
                     </div>
                   </div>
                   <div class="amount__container">
                     <p class="ticket-amount__ticket-name">Senior 65+</p>
                     <div class="amount__inputs">
-                      <div class="amount__btn" onclick="this.nextElementSibling.stepDown()">-</div>
-                      <input id="seniorAmount" class="amount__number" type="number" min="0" max="20" value="0" readonly>
-                      <div class="amount__btn" onclick="this.previousElementSibling.stepUp()">+</div>
+                      <div id="ticketsSeniorRemove" class="amount__btn">-</div>
+                      <input id="ticketsSeniorAmount" class="amount__number" type="number" min="0" max="20" value="0" readonly>
+                      <div id="ticketsSeniorAdd" class="amount__btn">+</div>
                     </div>
                   </div>
-                  <h6 class="form__title amount__total">Total: €200</h6>
+                  <div id="ticketsTotal" class="form__title amount__total">Total: 0 €</div>
                   <button class="amount__btn_buy" id="tickets__buy-btn">Buy now</button>
                 </div>
               </div>
@@ -488,18 +489,18 @@
                 <div class="booking-entry__ticket">
                   <p class="text_black booking-entry__text">Basic 18+ (20 €)</p>
                   <div class="booking__inputs">
-                    <div id="basicRemove" class="booking__btn">-</div>
+                    <div id="booking_basicRemove" class="booking__btn">-</div>
                     <input id="booking_basicAmount" class="booking__number" type="number" min="0" max="20" value="0"
                       readonly>
-                    <div id="basicAdd" class="booking__btn">+</div>
+                    <div id="booking_basicAdd" class="booking__btn">+</div>
                   </div>
                 </div>
                 <div class="booking-entry__ticket">
                   <p class="text_black booking-entry__ticket booking-entry__text">Senior 65+ (10 €)</p>
                   <div class="booking__inputs">
-                    <div id="seniorRemove" class="booking__btn">-</div>
+                    <div id="booking_seniorRemove" class="booking__btn">-</div>
                     <input id="booking_seniorAmount" class="booking__number" type="number" min="0" max="20" value="0" readonly>
-                    <div id="seniorAdd" class="booking__btn">+</div>
+                    <div id="booking_seniorAdd" class="booking__btn">+</div>
                   </div>
                 </div>
               </div>
