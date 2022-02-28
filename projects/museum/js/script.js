@@ -212,3 +212,16 @@ window.onload = (event) => {
     (ticketsBasicAmount.value * 20 + ticketsSeniorAmount.value * 10) +
     " €";
 };
+
+
+//explore slider
+
+let sliderControl = document.querySelector("div.explore-slider__control");
+let rangeThumb = document.querySelector("div.explore-slider input[name=exploreRange]");
+
+rangeThumb.onclick = function() {
+  // sliderControl.setAttribute("left", rangeThumb.value);
+  sliderControl.style.left = rangeThumb.value + "%"; // не подходящий вариант
+  console.log("value: " + rangeThumb.value);
+  
+}
