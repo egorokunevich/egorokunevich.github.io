@@ -222,7 +222,13 @@ let rangeThumb = document.querySelector("div.explore-slider input[name=exploreRa
 
 rangeThumb.oninput = function() {
   sliderControl.style.left = rangeThumb.value + "%";
-  sliderAfter.style.width = (100 - rangeThumb.value) + "%";
+  if (rangeThumb.value == "99") {
+    sliderAfter.style.width = 0 + "%";
+  }
+  else {
+    sliderAfter.style.width = (100 - rangeThumb.value) + "%";
+  }
+  
   console.log("value: " + rangeThumb.value);
   console.log("width: " + sliderAfter.style.width);
 }
