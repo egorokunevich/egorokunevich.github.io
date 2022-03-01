@@ -217,11 +217,13 @@ window.onload = (event) => {
 //explore slider
 
 let sliderControl = document.querySelector("div.explore-slider__control");
+let sliderAfter = document.querySelector("div.after-container");
 let rangeThumb = document.querySelector("div.explore-slider input[name=exploreRange]");
 
-rangeThumb.onclick = function() {
-  // sliderControl.setAttribute("left", rangeThumb.value);
-  sliderControl.style.left = rangeThumb.value + "%"; // не подходящий вариант
+rangeThumb.oninput = function() {
+  sliderControl.style.left = rangeThumb.value + "%";
+  sliderAfter.style.width = (100 - rangeThumb.value) + "%";
   console.log("value: " + rangeThumb.value);
-  
+  console.log("width: " + sliderAfter.style.width);
 }
+
