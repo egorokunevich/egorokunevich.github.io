@@ -17,10 +17,11 @@
   max-width: 720px;
   width: calc(100% - 40px);
   height: auto;
-  /* background-image: url(../assets/img/explore-slider/before.jpg); */
+  /* background-image: url(../assets/img/explore-slider/before.avif); */
   position: relative;
   overflow: hidden;
   z-index: 3;
+  touch-action: none;
 }
 
 .explore-slider__after {
@@ -28,7 +29,7 @@
   position: relative;
   width: 100%;
   height: auto;
-  background-image: url(../assets/img/explore-slider/before.jpg);
+  background-image: url(../assets/img/explore-slider/before.avif);
   background-size: 100%;
   z-index: 4;
 }
@@ -46,7 +47,7 @@
   max-height: 700px;
   height: 100%;
   box-sizing: border-box;
-  background-image: url(//assets/img/explore-slider/after.jpg);
+  background-image: url(//assets/img/explore-slider/after.avif);
   background-position: right;
   overflow: hidden;
 }
@@ -306,7 +307,7 @@ input.explore-range:focus::-ms-fill-upper {
     height: 100%;
   }
 
-  .explore-slider__control::after {
+  /* .explore-slider__control::after {
     top: 105%;
     left: calc(50% - 1px);
     right: calc(50% - 1px);
@@ -314,17 +315,14 @@ input.explore-range:focus::-ms-fill-upper {
   }
 
   .explore-slider__control::before {
-    /* top: 105%; */
     left: calc(50% - 1px);
     right: calc(50% - 1px);
     width: 2px;
-  }
+  } */
 
-  .explore-slider__control {
+  /* .explore-slider__control {
     position: absolute;
     left: 50%;
-    /* left: calc(50% - 10px); */
-    /* right: calc(50% - 10px); */
     right: 50%;
     top: calc(50% - 10px);
     bottom: calc(50% - 10px);
@@ -332,5 +330,5 @@ input.explore-range:focus::-ms-fill-upper {
     height: 5%;
     border: solid 2px white;
     border-radius: 50%;
-  }
+  } */
 }
