@@ -1,0 +1,83 @@
+.container {
+    max-width: 420px;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.messenger {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    max-height: 250px;
+    display: flex;
+    flex-flow: column;
+    padding: 0 50px 0 50px;
+}
+
+.contact {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.options {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.messages__sent {
+    background-color: rgb(230, 230, 230);
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    box-shadow: inset 0 -5px 10px -5px rgba(0, 0, 0, 0.1);
+}
+
+.message-wrap {
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    height: fit-content;
+    padding: 10px 20px 10px 20px;
+    box-sizing: border-box;
+}
+
+.message {
+    background-color: rgb(24, 101, 173);
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px 10px 25px;
+    border-radius: 25px;
+}
+
+.message-input {
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+    outline: solid 1px rgb(211, 211, 211);
+}
+
+.input__message {
+    outline: none;
+    border: none;
+    background-color: rgb(230, 230, 230);
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 16px;
+    max-height: 25px;
+}
