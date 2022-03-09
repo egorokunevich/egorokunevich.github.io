@@ -1,4 +1,4 @@
-// let slider = document.querySelector("div.slider");
+let slider = document.querySelector("div.slider");
 // let sliderItems = document.querySelector("div.welcome__slides");
 let slides = document.querySelectorAll("div.welcome__slide");
 let prev = document.querySelector("div.slider__arrow_left");
@@ -7,6 +7,8 @@ let sliderDot = document.querySelector(".slider__dot");
 
 let sliderIndex = 2;
 let position = `translateX(-${(sliderIndex * 1000)}px)`;
+let sliderWidth = slider.clientWidth;
+console.log(sliderWidth);
 
 prev.onclick = function prevSlide() {
   if (sliderIndex == 0) {
@@ -30,7 +32,8 @@ next.onclick = function nextSlide() {
 }
 
 function changePosition() {
-  position = `translateX(-${(sliderIndex * 1000)}px)`;
+  sliderWidth = slider.clientWidth;
+  position = `translateX(-${(sliderIndex * sliderWidth)}px)`;
   for (let i = 0 ; i < slides.length; i++) {
       slides[i].style.transform = position;
   }
